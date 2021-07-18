@@ -8,8 +8,6 @@
   box-sizing: border-box;
 }
 
-
-
 .content {
   height: 100vh;
   display: flex;
@@ -34,7 +32,7 @@ ul {
   padding-bottom: 10px;
 }
 
-li {
+.nav li {
   display: inline;
   margin-right: 15px;
   color: #403D3D;
@@ -43,7 +41,7 @@ li {
   font-size: 18px;
 }
 
-li:hover {
+.nav li:hover {
   cursor: pointer;
 }
 
@@ -59,7 +57,7 @@ img {
   width: 100%;
 }
 
-main {
+.about-us {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -70,16 +68,61 @@ main {
   font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
   color: rgb(41, 40, 40);
+  padding: 20px;
 }
 
-main p {
-  font-size: 25px;
+.about-us p {
+  font-size: 20px;
 }
 
-main > h1 {
+.about-us h4 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+main h1 {
+  margin-top: 40px;
   color: #ffb63c;
   font-size: 4rem;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("images/bg-menu-repeat.jpg");
+  min-height: auto;
+  width: 100%;
+  color: white;
+  padding: 0 50px;
+}
+
+.menu h1 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu h4 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffb63c;
+  letter-spacing: 1px;
+  font-size: 25px;
+
+  text-decoration: underline;
+}
+
+.menu ul {
+  margin-bottom: 30;
+}
+
+.menu li {
+  margin-bottom: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
 }
 
 footer {

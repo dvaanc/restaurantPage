@@ -1,8 +1,10 @@
-import { header, img, main, footer } from "./home";
-const contentDiv = document.querySelector(".content");
+import { homePage } from "./home";
 
-const loadPage = (() => {
-  header();
+const loadPage = () => {
+  homePage.header();
+  homePage.img();
+  homePage.main();
+  homePage.footer();
+};
 
-})();
-
+export { loadPage };
