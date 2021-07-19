@@ -1,10 +1,11 @@
 import { homePage } from "./home";
+const contentDiv = document.querySelector(".content");
 
 const loadPage = () => {
-  homePage.header();
-  homePage.img();
-  homePage.main();
-  homePage.footer();
+  contentDiv.appendChild(homePage.header());
+  contentDiv.appendChild(homePage.img());
+  contentDiv.appendChild(homePage.main());
+  contentDiv.appendChild(homePage.footer());
 };
 
 export { loadPage };

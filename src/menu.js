@@ -1,4 +1,3 @@
-const contentDiv = document.querySelector(".content");
 const menu = () => {
   const menu = document.createElement("main");
     menu.classList.add("menu");
@@ -56,6 +55,7 @@ const menu = () => {
         <li>Mango Passion<br>(mango, passionfruit, ice cream & mango jelly)</li>
       </ul>
     `;
+    return menu.innerHTML;
 }
 
 export { menu };

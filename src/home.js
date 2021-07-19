@@ -1,4 +1,4 @@
-const content = document.querySelector(".content")
+
 const homePage = (() => {
 
 const header = () => {
@@ -16,18 +16,19 @@ const header = () => {
     </nav>
     `;
 
-  content.appendChild(header);
+  return header;
 };
 
 const img = () => {
   const img = document.createElement("img");
     img.src="images/banner-index.jpg"
-    content.appendChild(img);
+  return img;
 }
 
 const main = () => {
   const main = document.createElement("main");
     main.classList.add('about-us');
+    main.classList.add('show');
     main.innerHTML = 
     `
     <h4><strong>ABOUT</strong></h4>
@@ -39,7 +40,7 @@ const main = () => {
     <p>We make your drinks when you order it and in front of you. </p>
     <p>And we are constantly searching for better quality ingredients and fresh new tastes that we can bring to you.</p>
     `;
-    content.appendChild(main);
+    return main;
 }
 
 const footer = () => {
@@ -48,7 +49,7 @@ const footer = () => {
     `
     <p>Copyright © 2021. Web Design by dvaanc.</p>
     `;
-    content.appendChild(footer);
+    return footer;
 }
 
 return { header, img, main, footer };
